@@ -1,18 +1,18 @@
 
-// Mi proyecto se trata de una Tienda Online de Obras artisticas
+// Mi proyecto se trata de una Tienda Online de Obras artisticas de una artista llamada Yanina Rojas
 
 let productos = parseInt(prompt ("¿Que producto te gustaria comprar? 1.Acuarela - 2.Retratos - 3.Souvenirs"))
 const seguirComprando = true;
 let totalCompra = 0; 
 let decision;
 
-// arreglo de productos
+// Arreglo de productos
 const productosArray = ["acuarela", "retratos", "souvenirs"]
 console.log (productosArray)
 
-// clase producto
+// Clase producto
 class NuevoProducto{
-  constructor(id,name,price,stock,size){
+  constructor(id,name,price,stock){
     this.id = id
     this.name = name;
     this.price = price;
@@ -20,11 +20,11 @@ class NuevoProducto{
   }
 }
 const acuarela = new NuevoProducto(1,'Acuarela',200,10);
-productosArray.push(remera);
+productosArray.push(acuarela);
 const pantalon = new NuevoProducto(2,'Retratos',400,5);
-productosArray.push(pantalon);
+productosArray.push(retratos);
 const accesorios = new NuevoProducto(3,'Souvenirs',500,20);
-productosArray.push(accesorios);
+productosArray.push(souvenirs);
 
 console.log(productosArray)
 
